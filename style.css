@@ -38,18 +38,15 @@ a {
   font-size: 1.3rem;
 }
 
-.logo {
-  margin-top: 20px;
-}
-
 .header a {
   color: white;
-  transition: .3s;
   position: relative;
   right: -15px;
+  transition: .3s;
+  padding: 10px;
 }
-.header a:hover {
-  color: gray;
+.header ul a:hover {
+  color: rgb(204, 198, 198);
 }
 
 .header ul {
@@ -60,6 +57,20 @@ a {
 .header ul li {
   margin-left: 10px;
   padding: 10px;
+}
+
+.logo {
+  margin-top: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  margin-left: 20px;
+  font-weight: bold;
+  letter-spacing: .03em;
+  font-size: 1.5rem;
 }
 
 .main-content h1 {
@@ -172,9 +183,15 @@ a {
   display: grid;
   grid-template-columns: repeat(12, 72px);
   grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   width: 80vw;
   margin: 0 auto;
+}
+
+.portfolio-imgs li img {
+  border-radius: 5px;
 }
 
 .foto-port1 {
