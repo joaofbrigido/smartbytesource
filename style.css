@@ -22,7 +22,7 @@ a {
   height: 590px;
 }
 
-.container {
+.container-main {
   width: 80vw;
   margin: 0 auto;
 }
@@ -314,6 +314,7 @@ a {
 .contato-container {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
   width: 80vw;
