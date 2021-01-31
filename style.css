@@ -380,3 +380,18 @@ a {
 .footer a {
   color: grey;
 }
+
+/* ANIMAÇÃO */
+[data-anima] {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+[data-anima='up'] {
+  transform: translateY(50px);
+}
+
+[data-anima].anima {
+  opacity: initial;
+  transform: initial;
+}
