@@ -3,11 +3,12 @@ function scrollSuave() {
 
   function scrollToSection(event) {
     event.preventDefault();
-    const href = event.path[0].getAttribute('href');
+    const href = event.currentTarget.getAttribute('href');
     const section = document.querySelector(href);
-    section.scrollIntoView({
+    const topo = section.offsetTop;
+    window.scrollTo({
+      top: topo + (-40),
       behavior: 'smooth',
-      block: 'start',
     });
   }
 
@@ -35,7 +36,7 @@ function animaAoScroll() {
 
   const sections = document.querySelectorAll('[data-anima]');
   if (sections.length) {
-    const windowMetade = window.innerHeight * 0.8;
+    const windowMetade = window.innerHeight * 0.9;
     const animaClass = 'anima';
 
     function animaScroll() {
