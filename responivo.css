@@ -35,6 +35,9 @@
     margin: 10px auto;
   }
 
+  .main {
+    background-attachment: inherit;
+  }
   .main-content {
     display: grid;
     grid-template-columns: 505px;
