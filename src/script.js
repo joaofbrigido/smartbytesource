@@ -7,7 +7,7 @@ function scrollSuave() {
     const section = document.querySelector(href);
     const topo = section.offsetTop;
     window.scrollTo({
-      top: topo + (-40),
+      top: topo + -40,
       behavior: 'smooth',
     });
   }
@@ -44,8 +44,6 @@ function animaAoScroll() {
         const sectionTop = section.getBoundingClientRect().top;
         const isSectionVisible = sectionTop - windowMetade < 0;
         if (isSectionVisible) section.classList.add(animaClass);
-        else if (section.classList.contains(animaClass))
-          section.classList.remove(animaClass);
       });
     }
     animaScroll();
